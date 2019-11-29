@@ -22,4 +22,13 @@
   4、使用Model 传参
   5、JSP路径默认放在src/main 下 webapp 中
   6、启动会报404错误，使用spring-boot:run启动就能解决
-四、
+
+四、集成 MyBatis
+  1、添加依赖
+  2、在配置文件中增加数据源配置
+  3、创建bean+mapper类
+  4、在controller类中引用mapper类时，会提示报错，但是程序可运行，将idea的提示级别降低
+  5、setting >--> Editor >--> Inspections >--> spring core >--> code >--> Autowiring for Bean Class >--> Severity(Warning)
+  6、https://jingyan.baidu.com/article/ff42efa9d8bafbc19e2202b1.html
+
+五、
