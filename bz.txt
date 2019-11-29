@@ -1,0 +1,5 @@
+一、配置文件application.yml的读取：
+  1、在配置文件中以Key: value 的形式展现，":"后必须加空格
+  2、在组件中，以@Value("${key}")的方式获取value
+  3、可在配置文件中进行key值运算，如key3: "key1:${key1},key3:${key2}"
+  4、使用前缀，前缀key后不加value ，其下属性key 必须换行且前面加空格，后台用bean+@ConfigurationProperties获取

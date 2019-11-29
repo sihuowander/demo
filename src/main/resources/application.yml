@@ -1,5 +1,6 @@
 server:
-port: 8080
-name: wujinyi
-age: 100
+  port: 8080
+student:
+  name: wujinyi
+  age: 100
 content: "name:${name},age:${age}"
