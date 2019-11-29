@@ -14,4 +14,12 @@
   2、setting >--> Compiler >--> Build project automatically
   3、快捷键Ctrl+Shift+Alt+/ >--> Registry >--> compiler.automake.allow.when.app.running
   4、详情见 https://blog.csdn.net/qq_36582604/article/details/80904019
-三、
+
+三、添加JSP功能
+  1、添加依赖
+  2、在配置文件中添加JSP重定向路径
+  3、使用Controller注释
+  4、使用Model 传参
+  5、JSP路径默认放在src/main 下 webapp 中
+  6、启动会报404错误，使用spring-boot:run启动就能解决
+四、

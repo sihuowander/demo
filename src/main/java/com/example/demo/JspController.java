@@ -7,14 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.text.DateFormat;
 import java.util.Date;
 
-/**
- * 测试控制器
- *
- */
 @Controller
-public class HelloController {
-
-    @RequestMapping("/hello")
+public class JspController {
+    @RequestMapping("/jsp")
     public String hello(Model m){
         m.addAttribute("now",DateFormat.getDateTimeInstance().format(new Date()));
         return "hello";
