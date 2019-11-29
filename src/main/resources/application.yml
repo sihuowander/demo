@@ -2,3 +2,4 @@ server:
 port: 8080
 name: wujinyi
 age: 100
+content: "name:${name},age:${age}"

@@ -10,12 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
-    @Value("${name}")
-    private String name;
-    @Value("${age}")
-    private String age;
+//    @Value("${name}")
+//    private String name;
+//    @Value("${age}")
+//    private String age;
+    @Value("${content}")
+    private String content;
     @RequestMapping("/hello")
     public String hello(){
-        return name+age;
+//        return name+age;
+        return content;
     }
 }
