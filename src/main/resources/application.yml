@@ -2,5 +2,5 @@ server:
   port: 8080
 student:
   name: wujinyi
-  age: 100
+  age: 10
 content: "name:${name},age:${age}"
