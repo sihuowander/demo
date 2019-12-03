@@ -31,4 +31,23 @@
   5、setting >--> Editor >--> Inspections >--> spring core >--> code >--> Autowiring for Bean Class >--> Severity(Warning)
   6、https://jingyan.baidu.com/article/ff42efa9d8bafbc19e2202b1.html
 
-五、
+五、打包
+  1、Configuration >--> clean install
+  2、pom.xml:
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>demo</name>
+  3、运行：run.bat >--> java -jar demo-0.0.1-SNAPSHOT.jar
+  4、访问方式依旧：http://localhost:8080/student/listStudent
+    运行结果：404 >--> jar包没有webapp下的代码
+  5、修改pom.xml
+    <packaging>war</packaging>
+    打包的最终名称<build><finalName>demo</finalName></build> demo.war
+    运行模式不变
+
+六、调整 MyBatis
+  1、去除 StudentMapper.java 中的 @Select("SELECT * FROM student")
+  2、在resource 新建同级目录com.example.demo.mapper
+  3、新建同名xml >--> StudentMapper.xml >--> id名和接口方法名一致，且参数列表和返回结果对象一一对应
+        <select id="findAll" resultMap="RequestMap">
+七、
