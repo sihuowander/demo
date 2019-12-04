@@ -17,12 +17,13 @@ import java.util.List;
  * @create: 2018-05-08-下午 20:25
  */
 @Controller
+@RequestMapping("/student/")
 public class StudentController {
 
     @Autowired
     private StudentMapper studentMapper;
 
-    @RequestMapping("/listStudent")
+    @RequestMapping("listStudent")
     public String listStudent(Model model) {
         List<Student> students = studentMapper.findAll();
         model.addAttribute("students", students);
